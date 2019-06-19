@@ -1,0 +1,81 @@
+<!doctype HTML>
+<html leng="en">
+<head>
+<meta charset="utf-8">
+<meta name="KnoxCafeFind" content="Knoxville,coffee,shop,randomizer">
+<link rel="stylesheet" href="styles.css">
+
+<title>Knoxville Coffee Shop Selector</title>
+</head>
+<body>
+<header>Knoxville Coffee Shop Selector</header>
+<h1>Follow instructions, then click "Get Results" below</h1>
+<h2>How do you want to choose a coffee shop?<br>
+</h2>
+<h3 id="typebox1">Completely at random</h3>
+<h3 id="typebox2">Weighted</h3>
+<p>Note - Weighted is calculated using the user's preferences and the biased opinion of the site designer.</p>
+
+<h2>Select your location:</h2><br>
+<div class="maps">
+<img id="westmap" src="img_files/west2.jpg" alt="West Knoxville Map" >
+<img id="northmap" src="img_files/north2.jpg" alt="North Knoxville Map" >
+<img id="downmap" src="img_files/down2.jpg" alt="Downtown Knoxville Map" >
+</div>
+
+<p id="loctag" class="calchelp">Location</p>
+
+
+<h2>How far are you willing to travel?</h2>
+<h3 id="distbox1">Far (anywhere in town)</h3>
+<h3 id="distbox2">A little (nearby parts of town)</h3>
+<h3 id="distbox3">Not very far (this part of town)</h3>
+<p id="disttag" class="calchelp">Distance</p>
+
+<div id="weighted">
+<h2>What about parking?</h2>
+<h3 id="parkbox1">Convenient parking is very important. (high)</h3>
+<h3 id="parkbox2">Convenient parking is not super important. (mid)</h3>
+<h3 id="parkbox3">Convenient parking does not matter. (low)</h3>
+<p id="parktag" class="calchelp">Parking</p>
+
+<h2>What about coffee quality?</h2>
+<h3 id="cofbox1">Coffee quality is very important. (high)</h3>
+<h3 id="cofbox2">Coffee quality is not super important. (mid)</h3>
+<h3 id="cofbox3">Coffee quality does not matter. (low)</h3>
+<p id="coftag" class="calchelp">Coffee</p>
+
+<h2>What about food quality?</h2>
+<h3 id="foodbox1">Food quality is very important. (high)</h3>
+<h3 id="foodbox2">Food quality is not super important. (mid)</h3>
+<h3 id="foodbox3">Food quality does not matter. (low)</h3>
+<p id="foodtag" class="calchelp">Food</p>
+
+<h2>How much weight do you want to give over to chance?</h2>
+<h3 id="randbox1">Not much</h3>
+<h3 id="randbox2">A whole bunch</h3>
+<p id="randtag" class="calchelp">Random</p>
+</div>
+
+<br><button id="getResult">Get Results</button>
+<br><br>
+
+<div id="outcomediv">
+<h2 id="outcome">Outcome</h2><br>
+
+<h2 id="shopname"><span class="boxit">Shopname</span><br></h2>
+<div class="shopinfo">
+<br><img id="shoplogo"  src="holder"><br><br>
+</div>
+<p id="shopaddress" class="shopinfo">address</p>
+<p id="shophours" class="shopinfo">hours</p>
+<p class="shopinfo"><a id="shoplink" href="link" target="_blank">Website</a></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+<footer>
+<p id="btm">Developed for testing purposes and for my own enjoyment. Please do not be a jerk and steal this.</p>
+<p>Last updated June 2019; contact me: rmbarrett333@gmail.com</p>
+</footer>
+</html>
